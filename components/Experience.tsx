@@ -5,14 +5,14 @@ import { RevealOnScroll } from './RevealOnScroll';
 
 const Experience: React.FC = () => {
   return (
-    <section id="education" className="py-24 bg-dark relative overflow-hidden">
+    <section id="education" className="py-24 bg-slate-950 relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-violet-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div className="container mx-auto px-6 relative z-10">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-          
+
           {/* Education Column */}
           <div>
             <RevealOnScroll>
@@ -32,14 +32,14 @@ const Experience: React.FC = () => {
                 <RevealOnScroll key={edu.id} delay={index * 150}>
                   <div className="relative pl-12 group">
                     {/* Timeline Dot */}
-                    <div className="absolute left-[13px] top-2 w-3.5 h-3.5 rounded-full bg-dark border-2 border-blue-500 group-hover:bg-blue-500 group-hover:scale-125 transition-all duration-300 z-10"></div>
-                    
-                    <div className="glass-card p-6 rounded-2xl transition-all duration-300 group-hover:-translate-y-1 group-hover:border-blue-500/30">
+                    <div className="absolute left-[13px] top-2 w-3.5 h-3.5 rounded-full bg-slate-950 border-2 border-blue-500 group-hover:bg-blue-500 group-hover:scale-125 transition-all duration-300 z-10"></div>
+
+                    <div className="glass p-6 rounded-2xl transition-all duration-300 group-hover:-translate-y-1 group-hover:border-blue-500/30 border border-white/5">
                       <div className="flex flex-wrap justify-between items-start gap-2 mb-2">
-                         <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">{edu.degree}</h3>
-                         <span className="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-mono border border-blue-500/10">
-                           {edu.period}
-                         </span>
+                        <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">{edu.degree}</h3>
+                        <span className="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-mono border border-blue-500/10">
+                          {edu.period}
+                        </span>
                       </div>
                       <p className="text-slate-400 mb-4 font-medium">{edu.institution}</p>
                       <div className="inline-flex items-center gap-2 text-sm text-slate-500 bg-slate-900/50 px-3 py-1.5 rounded-lg border border-slate-800">
@@ -70,15 +70,15 @@ const Experience: React.FC = () => {
                   <div className="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 hover:border-violet-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-900/20">
                     <div className="aspect-[16/9] w-full overflow-hidden relative">
                       <div className="absolute inset-0 bg-slate-900/40 group-hover:bg-transparent z-10 transition-all duration-500"></div>
-                      <img 
-                        src={ach.image} 
-                        alt={ach.title} 
+                      <img
+                        src={ach.image}
+                        alt={ach.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       {/* Gradient Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-transparent z-10"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent z-10"></div>
                     </div>
-                    
+
                     <div className="absolute inset-0 z-20 flex flex-col justify-end p-6">
                       <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                         <div className="flex items-center gap-2 text-violet-400 text-xs font-bold uppercase tracking-wider mb-2">
